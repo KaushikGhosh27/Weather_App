@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container top">
+        <h1>Weather App</h1>
+        <input type="text" class="search" placeholder="Search by city name" />
+        <button type="submit" class="btn">Search</button>
+        <form action="" onsubmit="return false">
+          <p class="error"></p>
+        </form>
+
+        <section>
+          <div class="container">
+            <div class="icon">
+              <img src="" alt="" class="weather-icon" />
+            </div>
+            <div class="location">
+              <div class="city">Siliguri, India</div>
+              <div class="date">Sunday, Aug 17 2021</div>
+            </div>
+            <div class="current">
+              <div class="temp">25 <span>°C</span></div>
+              <div class="weather">Clouds</div>
+              <div class="temp-range">32°C / 21°C</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <span>
+        Powered by
+        <a href=" https://openweathermap.org/">Open Weather</a>
+      </span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
