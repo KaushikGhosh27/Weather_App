@@ -6,8 +6,8 @@ const api = {
 const search = document.querySelector(".search");
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", getInput);
-btn.addEventListener("keypress", getInputAlt);
 
+// to fetch values by clicking the mouse button
 function getInput(event) {
   event.preventDefault();
   if (event.type == "click") {
@@ -16,12 +16,12 @@ function getInput(event) {
   }
 }
 
-function getInputAlt(event) {
+// to fetch values using enter
+search.addEventListener("keypress", (event) => {
   if (event.keyCode == 13) {
-    getData(searchbox.value);
-    console.log(search.value);
+    getData(search.value);
   }
-}
+});
 
 function getData() {
   fetch(`${api.base}weather?q=${search.value}&units=metric&appid=${api.key}`)
