@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Alegreya+Sans&family=Lora:wght@500&family=Merriweather&family=Orbitron:wght@600&family=Outfit&family=Permanent+Marker&family=Poppins:ital,wght@1,300&family=Quicksand&family=Readex+Pro&display=swap"
+    rel="stylesheet">
+  <title>My Weather App</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <header>
+      <h6>Weather App</h6>
+    </header>
+    <div id="search-container">
+      <input type="text" id="search" placeholder="Search by city name">
+      <button type="submit" class="btn">Search</button>
+
+      <p id="error"></p>
+    </div>
+    <div id="display">
+      <img id="weather-icon" src="images/weatherTwo.png" alt="weather-img">
+      <div id="city">Guwahati, IN</div>
+      <div id="date">Tuesday, 7 Dec 2021</div>
+      <hr>
+      <div id="temp">19 °C</div>
+      <div id="description"><em>Clear</em></div>
+      <div id="max-min">19 °C / 19 °C</div>
+    </div>
+  </div>
+  <div id="clock">19:50:23</div>
+  <footer>Powered by <a href="https://openweathermap.org/api" target="_blank">Open Weather Map </a>© </footer>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
