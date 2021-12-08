@@ -64,6 +64,7 @@ function showTime() {
   let min = time.getMinutes();
   let sec = time.getSeconds();
 
+  
   min = min < 10 ? "0" + min : min;
   sec = sec < 10 ? "0" + sec : sec;
 
